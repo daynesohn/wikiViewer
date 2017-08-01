@@ -2,8 +2,8 @@ function findMatches() {
 
   $('.matches').empty();
 
-  var search = document.querySelector('.search'),
-      searchTerm = search.value;
+  var search = $('.search'),
+      searchTerm = search.val();
 
   $.ajax({
     url: 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=' + searchTerm + '&callback=?',
@@ -22,9 +22,9 @@ function findMatches() {
   })
 }
 
-var enter = document.getElementById("wiki");
-enter.onkeyup = function(e){
-    if(e.keyCode == 13){
-       findMatches();
-    }
-}
+var enter = $('.search');
+enter.keyup( function(e) {
+  if(e.keyCode == 13) {
+    findMatches();
+  }
+})
