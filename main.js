@@ -15,7 +15,7 @@ function findMatches() {
 
       a = 0;
       while (a < articles.length) {
-        $('.matches').append('<a href="' + url[a] + '" class="urls" target="_blank"><li><span class="article col-md-6">' + articles[a] + '</span><span class="description col-md-6">' + desc[a] + '</span></li></a>');
+        $('.matches').append('<a href="' + url[a] + '" target="_blank"><li><span class="col-md-6">' + articles[a] + '</span><span class="col-md-6">' + desc[a] + '</span></li></a>');
         a++;
       }
     }
