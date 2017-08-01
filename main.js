@@ -22,7 +22,7 @@ function findMatches() {
 
       a = 0;
       while (a < articles.length) {
-        $('.matches').append('<li>' + articles[a] + ' - ' + desc[a] + ' - ' + '<a href="' + url[a] + '" target="_blank">Link</a>' + '</li>');
+        $('.matches').append('<a href="' + url[a] + '" class="urls" target="_blank"><li><span class="article col-md-6">' + articles[a] + '</span><span class="description col-md-6">' + desc[a] + '</span></li></a>');
         a++;
       }
     }

@@ -74,10 +74,16 @@ input.search:focus {
   font-size: 0.9rem;
 }
 
+.matches li a {
+  text-decoration: none;
+  color: #26547c;
+}
+
 .matches {
   margin: 2rem 0 0 0;
   padding: 0;
   position: relative;
+  font-size: 1.1rem;
 }
 .matches li {
   list-style: none;
@@ -85,8 +91,8 @@ input.search:focus {
   margin:0;
   padding:20px;
   display:flex;
+  align-items: center;
   justify-content:space-between;
-  text-transform: capitalize;
   color: #26547c;
 }
 
