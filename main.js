@@ -1,16 +1,9 @@
-var results = [],
-    searchInput = document.querySelector('.search'),
-    search = document.querySelector('.search'),
-    $html = $('.matches'),
-    articles,
-    desc,
-    url;
-
 function findMatches() {
 
   $('.matches').empty();
 
-  var searchTerm = search.value;
+  var search = document.querySelector('.search'),
+      searchTerm = search.value;
 
   $.ajax({
     url: 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=' + searchTerm + '&callback=?',
@@ -35,5 +28,3 @@ enter.onkeyup = function(e){
        findMatches();
     }
 }
-
-//$('input').on('keyup', findMatches);
