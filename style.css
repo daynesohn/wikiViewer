@@ -87,18 +87,12 @@ input.search:focus {
 }
 .matches li {
   list-style: none;
-  border-bottom: 2px solid #ffd166;
+  border-bottom: 5px solid #26547c;
   margin:0;
   padding:20px;
   display:flex;
   align-items: center;
   justify-content:space-between;
   color: #26547c;
-}
-
-.matches li:nth-child(even) {
   background-color: #fffcf9;
-}
-.matches li:nth-child(odd) {
-  background-color: #efedea;
 }
